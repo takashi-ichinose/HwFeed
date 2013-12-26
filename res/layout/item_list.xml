@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:text="2000/01/01"
+        android:textColor="#f00"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dateView"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/thumbnailsImageView"
+        android:text="タイトル"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/contentView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/titleView"
+        android:layout_marginTop="5dp"
+        android:text="本文"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/publisherView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/contentView"
+        android:text="掲載元"
+        android:textColor="#999"
+        android:textSize="10dp" />
+
+    <ImageView
+        android:id="@+id/thumbnailsImageView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/dateView"
+        android:layout_above="@+id/contentView"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>
